@@ -1,0 +1,255 @@
+body {
+  width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: #333;
+}
+
+.container {
+  padding: 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #00a1d6;
+  display: flex;
+  align-items: center;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.input-group {
+  display: flex;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+button {
+  background: #00a1d6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+button:hover {
+  background: #0088b7;
+}
+
+.model-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.model-option {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.model-option:hover {
+  border-color: #00a1d6;
+}
+
+.model-option.selected {
+  border-color: #00a1d6;
+  background: #f0f9ff;
+}
+
+.model-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.actions button {
+  border-radius: 4px;
+  flex: 1;
+  margin: 0 5px;
+}
+
+#refresh-btn {
+  background: #f5f5f5;
+  color: #666;
+}
+
+#refresh-btn:hover {
+  background: #eee;
+}/* 新增用户卡片样式 */
+.user-card {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: linear-gradient(135deg, #f5f9ff, #e1edff);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.avatar-container {
+    position: relative;
+    margin-right: 12px;
+}
+
+#user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.level-badge {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background: #ff9500;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.user-meta {
+    flex: 1;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.user-id {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background: #ccc;
+}
+
+.status-logged-in .status-dot {
+    background: #4caf50;
+}
+
+.status-logged-out .status-dot {
+    background: #f44336;
+}
+
+/* 直播间卡片 */
+.room-card {
+    display: flex;
+    padding: 10px;
+    background: #fff8f8;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.live-badge {
+    margin-right: 10px;
+}
+
+.live-badge img {
+    width: 24px;
+    height: 24px;
+}
+
+.room-info {
+    flex: 1;
+}
+
+.room-title {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.room-title span {
+    font-weight: bold;
+    color: #00a1d6;
+}
+
+.anchor-name {
+    font-size: 12px;
+    color: #666;
+}   /* popup_edge.css */
+   .edge-mode {
+     font-family: 'Microsoft YaHei', sans-serif;
+   }
+   
+   .edge-warning {
+     background: #0078d7;
+     color: white;
+     padding: 5px;
+     border-radius: 4px;
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+   }/* 新增状态样式 */
+.status-indicator.status-valid .status-dot {
+  background-color: #00c853;
+}
+.status-indicator.status-warning .status-dot {
+  background-color: #ffab00;
+}
+.status-indicator.status-error .status-dot {
+  background-color: #ff1744;
+}
+
+.error-tip {
+  display: flex;
+  align-items: center;
+  color: #ff1744;
+  font-size: 12px;
+  margin-top: 8px;
+}
